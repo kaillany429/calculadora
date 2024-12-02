@@ -1,0 +1,107 @@
+@font-face {
+    font-family:titulo ;
+    src: url(./fonte/CrystalUniverse-Oblique.otf);
+}
+
+
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #a17c4b;
+    background-color: #ffe4c4;
+}
+
+#calculadora {
+    max-width: 360px;
+    background-color: #e288483f;
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 8px 30px #a17c4b;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1{
+    font-family: titulo;
+    color: #ebad7a;
+}
+
+.videofundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.videofundo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#display {
+    font-size: 22px;
+    text-align: right;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #74370b93;
+    border: none;
+    box-sizing: border-box;
+}
+
+button{
+    width: calc(25% - 12px);
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a17c4b;
+    color: black;
+    float: left;
+}
+
+.operador{
+    background-color: #654b29;
+}
+
+button:hover{
+    cursor:pointer;
+    background-color: #8c490b;
+    box-shadow: 0 0 5px #794300;
+    transform: scale(0.9);
+}
+
+/* modo escuro  */
+.dark-mode h1 {
+    color: #d0814d;
+}
+
+.dark-mode #calculadora{
+    background-color: #57320067;
+    box-shadow:0 8px 30px #7d3e03;
+    backdrop-filter: blur(3.5px);
+}
+
+.dark-mode #display{
+    background-color: #7e4700;
+}
+
+.dark-mode button{
+    background-color: #452806b4;
+}
+
+.dark-mode .operador{
+    background-color: #8c490b68;
+}
